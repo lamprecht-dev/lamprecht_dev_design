@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamprecht Dev Design</title>
+    <script   src="https://code.jquery.com/jquery-3.6.3.min.js"
+			  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+			  crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> -->
+
+    <!-- <script type="text/javascript" src="./scroll-timeline.js" defer></script> -->
+    <script type="text/javascript" src="./script.js" defer></script>
+    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./styles.scss">
+</head>
+<body>
+    <!-- <div class="scroll_tracker"></div> -->
+    <div class="big header">
+        <div class="logo">
+            <img src="./assets/logo.svg" alt="Lamprecht Developement">
+        </div>
+        <ul class="nav">
+            <li class="nav_about courier bold" data-scroll-to="about"><span class="accent">01.</span> About</li>
+            <li class="nav_work courier bold" data-scroll-to="work"><span class="accent">02.</span> Work</li>
+            <li class="nav_experience courier bold" data-scroll-to="experience"><span class="accent">03.</span> Experience</li>
+            <li class="nav_contact courier bold" data-scroll-to="contact"><span class="accent">04.</span> Contact Me</li>
+        </ul>
+    </div>
+    <div class="scroll header big">
+        <div class="logo">
+            <img src="./assets/logo.svg" alt="Lamprecht Developement" data-scroll-to="about">
+        </div>
+        <ul class="nav">
+            <li class="nav_about courier bold" data-scroll-to="about"><span class="accent">01.</span> About</li>
+            <li class="nav_work courier bold" data-scroll-to="work"><span class="accent">02.</span> Work</li>
+            <li class="nav_experience courier bold" data-scroll-to="experience"><span class="accent">03.</span> Experience</li>
+            <li class="nav_contact courier bold" data-scroll-to="contact"><span class="accent">04.</span> Contact Me</li>
+        </ul>
+    </div>
+    <div class="small header">
+        <div class="logo" data-scroll-to="about">
+            <img src="./assets/logo_s.svg" alt="Lamprecht Developement" />
+        </div>
+        <div class="nav">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="scroll header small">
+        <div class="logo" data-scroll-to="about">
+            <img src="./assets/logo_s.svg" alt="Lamprecht Developement" />
+        </div>
+        <div class="nav">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div id="about"></div>  
+    <div id="poly-bg">
+        <img class="me" src="assets/me.small.png" />
+        <div class="introduction">
+            <div class="accent courier intro">Hi, I am</div>
+            <h1>David Lamprecht</h1>
+            <h2>I build full-stack web applications for those who care about intuitive experiences that empower users.</h2>
+        </div>
+        <!-- <div class="background_text"><div class="inner_bg_text">Lamprecht</div></div> -->
+        <div class="scroll_down"data-scroll-to="work"><i class="fa-solid fa-chevron-down"></i></div>
+        <div class="shape">
+            <div class="background_text"><div class="inner_bg_text">Lamprecht</div></div>
+        </div>
+    </div>
+
+    <div class="global_email">
+        <div class="courier"><a href="mailto:lamprechtdev@gmail.com">lamprechtdev@gmail.com</a></div>
+        <span class="line"></span>
+    </div>
+    
+    <div class="global_social">
+        <div class="courier social">social</div>
+        <div class="social_contact"><a target=”_blank” href="https://linkedin.com/in/dlamprecht"><i class="fa-brands fa-linkedin"></i></div>
+        <div class="social_contact"><a target=”_blank” href="https://github.com/lamprecht-dev"><i class="fa-brands fa-square-github"></i></div>
+        <span class="line"></span>
+    </div>
+    
+    <div id="nav_modal" >
+        <ul class="nav">
+            <li class="courier bold" data-scroll-to="about"><span class="accent">01.</span> About</li>
+            <li class="courier bold" data-scroll-to="work"><span class="accent">02.</span> Work</li>
+            <li class="courier bold" data-scroll-to="experience"><span class="accent">03.</span> Experience</li>
+            <li class="courier bold" data-scroll-to="contact"><span class="accent">04.</span> Contact Me</li>
+        </ul>
+    </div>
+
+    <div id="work">
+        <h1>My Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <div class="left">
+                    <img class="img_hor" src="assets/DSC03996.jpg" />
+                    <img class="img_ver" src="assets/DSC03996vert.png" />
+                </div>
+                <div class="right">
+                    <div class="small_tags"><span>WordPress</span> <span>Design</span> <span>UI / UX</span></div>
+                    <div class="content">
+                        <h2>Gathering Viridian Website</h2>
+                        <div class="description">I designed this to be the main HUB for any interactions the Church would possibly need. The design philosophy was to work well as a Kiosk with a tablet as well.</div>
+                        <div class="around_button"><a class="button" href="https://gatheringviridian.org">Visit Website</a></div>
+                    </div>
+                </div>
+            </div> 
+            <div class="project">
+                <div class="left">
+                    <img class="img_hor" src="assets/kelly-sikkema-_nmfUwTe9nA-unsplash.jpg" />
+                    <img class="img_ver" src="assets/kelly-sikkema-_nmfUwTe9nA-unsplashvert.png" />
+                </div>
+                <div class="right">
+                    <div class="small_tags"><span>Full Stack</span> <span>Database</span> <span>Multi Language</span> <span>Users and Roles</span> <span>Time Zones</span> <span>Login System</span> <span>Security</span> <span>GDPR</span> <span>UI / UX</span></div>
+                    <div class="content">
+                        <h2>Internal Volunteer and Report Management</h2>
+                        <div class="description">For two years I developed a internal tool for a Global Org called Pais Movement. The main objective was to manage hundreds of volunteers across the globe and have a robust but flexible reporting and review system that goes beyond what Google Forms can provide. I also had to build it with scalability in mind as new needs constantly arose.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="experience">
+        <h1>Wide Skillset</h1>
+        <div>I have worked with a variety of different clients ranging from individual upstarters to world wide organizations which gave me a wide variety of skills over the last decade of doing this work.</div>
+        <div class="cards">
+            <div class="card">
+                <div class="header"><img src="assets/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" /></div>
+                <div class="content">
+                    <h2>Web Developement</h2>
+                    <ul class="courier">
+                        <li>Javascript</li>
+                        <li>PHP / MySQL</li>
+                        <li>NodeJS</li>
+                        <li>Angular / ReactJS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header"><img src="assets/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" /></div>
+                <div class="content">
+                    <h2>Web Design</h2>
+                    <ul class="courier">
+                        <li>HTML / CSS</li>
+                        <li>WordPress</li>
+                        <li>SquareSpace</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header"><img src="assets/martin-faure-BO96jNPL8Sk-unsplash.jpg" /></div>
+                <div class="content">
+                    <h2>Adobe Suite</h2>
+                    <ul class="courier">
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>InDesign</li>
+                        <li>Premiere</li>
+                        <li>After Effects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header"><img src="assets/matteo-vistocco-Dph00R2SwFo-unsplash.jpg" /></div>
+                <div class="content">
+                    <h2>Communication</h2>
+                    <ul class="courier">
+                        <li>Media Director</li>
+                        <li>Team Leader</li>
+                        <li>Member of great teams</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="contact_wrapper">
+            <h1>Get in touch</h1>
+            <div class="social_wrapper">
+                <h2>social</h2>
+                <div class="social_contacts">
+                    <div class="social_contact"><a target=”_blank” href="https://linkedin.com/in/dlamprecht"><i class="fa-brands fa-linkedin"></i> <span class="courier">dlamprecht</span></a></div>
+                    <div class="social_contact"><a target=”_blank” href="https://github.com/lamprecht-dev"><i class="fa-brands fa-square-github"></i> <span class="courier">lamprecht-dev</span></a></div>
+                </div>
+            </div>
+            <div class="email_wrapper">
+                <h2>email</h2>
+                <div class="email courier"><a href="mailto:lamprechtdev@gmail.com">lamprechtdev@gmail.com</a></div>
+            </div>
+        </div>
+        <div class="background_text">Get in Touch</div>
+    </div>
+</div>
+</body>
+</html>
+
